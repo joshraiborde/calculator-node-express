@@ -5,7 +5,8 @@ const app = express()
 const port = 3000;
 
 app.get('/', (req, res) => {
-    res.send("Hello Worlddsfdf")
+    res.sendFile(__dirname + "/index.html")
+    // console.log(__dirname)
 })
 
 app.listen(port, () =>{
