@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const { get } = require("express/lib/response");
 const res = require("express/lib/response");
 const keys = require("./weatherpai.js");
+require('dotenv').config()
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
